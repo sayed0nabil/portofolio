@@ -1,0 +1,129 @@
+
+/* Main Rules */
+*{
+    box-sizing: border-box;
+}
+.main-color{
+    color: rgb(241, 140, 7);
+}
+.upper{
+    text-transform: uppercase;
+}
+body{
+    height: 6000px;
+}
+.container{
+    overflow: hidden;
+}
+/* Start Header Styling */
+header{
+    overflow: hidden;
+    background: url('../images/background.jpg');
+    background-size: 100% 100%;
+    background-clip: content-box;
+}
+header .layout-cover{
+    background: rgba(0, 0, 0, .8);
+}
+header nav{
+
+}
+header nav li{
+    margin: 0 20px;
+}
+header nav li:hover{
+    background: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+}
+header nav a {
+    padding: 5px;
+    color: rgb(241, 140, 7);
+    font-size: 27px;
+    font-family: 'Sofia', cursive;
+    transition: all .3s ease-in-out;
+}
+header nav a:hover{
+    color: white;
+}
+header .personal{
+    margin-top: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: url('../images/me.jpg');
+    background-size: 100% 100%;
+}
+header .info{
+    margin-top: 100px;
+}
+header .info > div:first-of-type{
+    padding: 5px 0;
+    border-top: 2px solid rgb(241, 140, 7);
+    border-bottom: 2px solid white;
+}
+header .info h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+header .info h3{
+}
+header #typewriter{
+    font-size: 32px;
+    min-height: 170px;
+    font-family: 'Stylish', sans-serif;
+}
+header .icons{
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+}
+header .icons a{
+    margin-left: 20px;
+}
+header .icons  path{
+    transition: all .3s ease-in-out;
+}
+header .icons .fa-facebook:hover path{
+    color: #3b5998;
+}
+header .icons .fa-google-plus:hover path{
+    color: #CC3333;
+}
+header .icons .fa-linkedin-in:hover path{
+    color: #0077B5;
+}
+header .icons .fa-github:hover path{
+    color: #333;
+}
+
+/* End Header Styling */
+/* Start Skills Styling */
+.skills .container > h2{
+    border-bottom: 4px solid rgb(241, 140, 7);
+    width: 200px;
+}
+.skills .container ul li{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(241, 140, 7);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: #343a40;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Skills Styling */
