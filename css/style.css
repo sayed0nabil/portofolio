@@ -15,6 +15,15 @@ body{
 .container{
     overflow: hidden;
 }
+.headline{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.headline-border{
+    width: 200px;
+    border-bottom: 3px solid rgb(241, 140, 7);
+}
+/* End Main Rules */
 /* Start Header Styling */
 header{
     overflow: hidden;
@@ -25,9 +34,7 @@ header{
 header .layout-cover{
     background: rgba(0, 0, 0, .8);
 }
-header nav{
 
-}
 header nav li{
     margin: 0 20px;
 }
@@ -65,8 +72,7 @@ header .info h2{
     font-size: 50px;
     font-weight: bold;
 }
-header .info h3{
-}
+
 header #typewriter{
     font-size: 32px;
     min-height: 170px;
@@ -96,31 +102,160 @@ header .icons .fa-github:hover path{
 }
 
 /* End Header Styling */
+
+
 /* Start Skills Styling */
-.skills .container > h2{
-    border-bottom: 4px solid rgb(241, 140, 7);
-    width: 200px;
+/*Start Skills*/
+
+.skills .container span{
+    font-size: 24px;
+    position: relative;
 }
-.skills .container ul li{
+.skills div h3{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.skills .container > div > div > div > span::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 3px;
+    width: 108px;
+    height: 3px;
+    background: #1CC7D0;
+}
+.skills .container > div > div > div >p{
+    color: #333333;
+    padding: 30px 0;
+}
+h3 span{
+    font-size: 1em;
+}
+.skills .container .bar{
+    height: 20px;
+    background: #E5E5E5;
+}
+.skills .container .bar .progress{
+    height: 100%;
+    background: #1CC7D0;
+}
+.skills .container .icons{
+    padding:20px 0;
+    overflow: hidden;
+}
+.skills .container .icons div{
     float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid rgb(241, 140, 7);
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background: #343a40;
-    color: white;
+    width: 31%;
+    margin-right: 2%;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.skills .container .icons p{
+    color: silver;
+}
+.skills .container .icons div svg{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+}
+.skills .container .icons div:first-child svg{
+    color: #FF4F81;
+    border-color: #FF4F81;
+}
+.skills .container .icons div:nth-child(2) svg{
+    color: #1CC7D0;
+}
+.skills .container .icons div:nth-child(3) svg{
+    color: #8E43E7;
+}
+.skills .container .icons div:nth-child(4) svg{
+    color: #FFC20E;
+}
+.skills .container .icons div:nth-child(5) svg{
+    color: #ED1B2E;
+}
+.skills .container .icons div:nth-child(6) svg{
+    color: #7FBB00;
+}
+/*End Skills*/
+
+
+
+
+/* Start Project Section Styling */
+.projects .project-card{
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    /* border-radius: 10px; */
+    padding: 0 !important;
+    padding-left: 50px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.projects .project-card .badge{
+    z-index: 9999;
+}
+.projects .project-card .cover{
+    opacity: 0;
+    padding-top: 55px;
+    background: #141c3a;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+@keyframes opacityAnimation {
+    from {opacity:0;}
+    to {opacity: 100;}
+}
+.projects .project-card:hover{
+    background-size: 150% 150%;
+}
+.projects .project-card:hover .cover{
+    animation-name: opacityAnimation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.projects .project-card .cover > h5{
+    background: black;
+    padding: 20px;
+    color: #f39c12;
+}
+.business-company{
+    background: url("../images/projects/front-end/business-company.PNG");
 }
 
+.tanatos{
+    background: url("../images/projects/front-end/Tantos.PNG");
+}
 
+.classic-landscape{
+    background: url("../images/projects/front-end/classic-landscape.PNG");
+}
+.cv-example{
+    background: url("../images/projects/front-end/cv_example.PNG");
+}
+.cv-example-2{
+    background: url("../images/projects/front-end/cv_example_2.PNG");
+}
+.bank{
+    background: url("../images/projects/full-stack/bank.PNG");
+}
+.olo-el3zm{
+    background: url("../images/projects/full-stack/olo-el3zm.PNG");
+}
+.dev-profiles{
+    background: url("../images/projects/full-stack/dev-profiles.PNG");
+}
 
-
-
-
-
-
+/* End Projects Section Styling */
 
 
 

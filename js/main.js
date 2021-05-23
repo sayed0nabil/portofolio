@@ -1,7 +1,3 @@
-
-
-
-
 $(function(){
 
     $('.personal').css('height', $('.personal').innerWidth() + 'px');
@@ -10,7 +6,7 @@ $(function(){
     })
     $('.nav-item').on('click', function(){
         // console.log($(this).attr("data-value")).offset().top);
-        $("html,body").animate({scrollTop: $($(this).attr("data-value")).offset().top},1000)
+        $("html,body").animate({scrollTop: $($(this).attr("data-value")).offset().top - 80 },1000)
     })
     new TypeIt('#typewriter', {
         speed: 40,
