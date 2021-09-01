@@ -13,12 +13,11 @@ $(function(){
         startDelay: 400
       })
       .type(`
-        I'm a mern stack developer so I can 
+        I'm a full stack developer so I can 
         design websites using HTML5, CSS3, ES6, Bootstrap, JQuery, REACT.JS and ANGULAR 
-        also can build a back-end apis using spring framework with hibernate 
-        that connected and interact with react.js
+        and can build a back-end apis using spring framework technologies with JPA and docker. 
         also can create, manipulate and manage databases
-        like mysql, mongodb, postgresql and firebase
+        like mysql, mongodb, postgresql
         `)
       .go();
     $(window).on('scroll', function(){

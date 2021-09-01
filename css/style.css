@@ -5,9 +5,6 @@
 .main-color{
     color: rgb(241, 140, 7);
 }
-body{
-    height: 6000px;
-}
 .container{
     overflow: hidden;
 }
@@ -268,6 +265,9 @@ h3 span{
 .cv-example-2{
     background: url("../images/projects/front-end/cv_example_2.PNG");
 }
+.prayers-times{
+    background: url("../images/projects/front-end/prayers-times.JPG");
+}
 .bank{
     background: url("../images/projects/full-stack/bank.PNG");
 }
@@ -379,3 +379,14 @@ h3 span{
     right: 20px;
 }
 /* End Education Section */
+
+
+/* Start Footer Section */
+footer{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+/* End Footer Section */
