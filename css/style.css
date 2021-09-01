@@ -1,13 +1,9 @@
-
 /* Main Rules */
 *{
     box-sizing: border-box;
 }
 .main-color{
     color: rgb(241, 140, 7);
-}
-.upper{
-    text-transform: uppercase;
 }
 body{
     height: 6000px;
@@ -17,13 +13,30 @@ body{
 }
 .headline{
     font-family: 'Roboto', sans-serif;
+    text-align: center;
     text-transform: uppercase;
 }
 .headline-border{
     width: 200px;
     border-bottom: 3px solid rgb(241, 140, 7);
+    margin: 15px auto;
 }
+section .container{
+    padding: 20px 0 40px 0;
+}
+
 /* End Main Rules */
+
+/* Start Custom Fonts */
+
+@font-face {
+    font-family: 'ViaodaLibre-Regular';
+    src: url('./fonts/ViaodaLibre-Regular-font/ViaodaLibre-Regular.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/ViaodaLibre-Regular-font/ViaodaLibre-Regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/ViaodaLibre-Regular-font/ViaodaLibre-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/ViaodaLibre-Regular-font/ViaodaLibre-Regular.svg') format('svg'); /* Legacy iOS */
+  }
+/* End Custom Fonts */
 /* Start Header Styling */
 header{
     overflow: hidden;
@@ -106,13 +119,22 @@ header .icons .fa-github:hover path{
 
 /* Start Skills Styling */
 /*Start Skills*/
-
+.skills{
+    background: url("../images/skills1.jpg");
+    background-size: 100% 100%;
+    color: white;
+}
+.skills .cover{
+    background: rgba(0, 0, 0, .4);
+    height: 100%;
+}
 .skills .container span{
     font-size: 24px;
     position: relative;
 }
 .skills div h3{
     font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 .skills .container > div > div > div > span::after{
@@ -124,18 +146,19 @@ header .icons .fa-github:hover path{
     height: 3px;
     background: #1CC7D0;
 }
-.skills .container > div > div > div >p{
-    color: #333333;
-    padding: 30px 0;
-}
 h3 span{
     font-size: 1em;
 }
 .skills .container .bar{
     height: 20px;
     background: #E5E5E5;
+    border-radius: 5px;
 }
+@keyframes progress-animation {
+    to {width: 0%}
+  }
 .skills .container .bar .progress{
+    width: 0%;
     height: 100%;
     background: #1CC7D0;
 }
@@ -202,7 +225,7 @@ h3 span{
     cursor: pointer;
 }
 .projects .project-card .badge{
-    z-index: 9999;
+    z-index: 888;
 }
 .projects .project-card .cover{
     opacity: 0;
@@ -257,8 +280,102 @@ h3 span{
 
 /* End Projects Section Styling */
 
+/* Start Work Section Styling  */
+.work{
+    background: #efeaea;
+}
+.work .container .pic{
+    background: url("../images/me.jpg");
+    background-clip: content-box;
+    background-position: 12% 13%;
+    background-clip: content-box;
+    height: 500px;
+}
+
+.work .container .pic .cover{
+    background: rgba(0, 0, 0, .6);
+    height: 100%;
+}
+
+.work .container .pic .info{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.work .container .pic .info ul{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+}
+.work .container .pic .info ul li{
+    margin: 20px 10px;
+}
+
+.work .container .info P:nth-of-child(2){
+    color:#404040;
+    line-height: 1.7;
+    font-size :20px;
+}
+.work .container .info .bullet-point{
+    position: relative;
+}
+.work .container .info .bullet-point::before{
+    content: "";
+    border-radius: 50%;
+    background: #FF6C5F;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: -26px;
+    
+}
+.work .container .info .bullet-point::after{
+    content: "";
+    width: 1px;
+    background: black;
+    height: 100%;
+    position: absolute;
+    top: 25px;
+    left: -16px;
+    
+}
+.work .container .info .bullet-point p:first-child{
+    color: #f18c04;
+    font-size: 26px;
+    font-family: 'ViaodaLibre-Regular', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.work .container .info .bullet-point p:nth-child(2){
+    font-weight :bold;
+    font-size :25px;
+}
+.work .container .info .bullet-point p:nth-child(3){
+    color: #404040;
+    font-size: 20px;
+}
+/* End Work Section Styling */
 
 
-
-
-/* End Skills Styling */
+/* Start Education Section */
+.education .start ,
+.education #info1,
+.education #info2,
+.education #info3{
+    border: 1px solid #BBB;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.education .start{
+    cursor: pointer;
+    position: relative;
+}
+.education .fa-sort-down{
+    position: absolute;
+    right: 20px;
+}
+/* End Education Section */

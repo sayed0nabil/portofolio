@@ -14,8 +14,8 @@ $(function(){
       })
       .type(`
         I'm a mern stack developer so I can 
-        design websites using HTML5, CSS3, ES6, Bootstrap, JQuery and REACT.JS
-        also can build a rest api with node.js
+        design websites using HTML5, CSS3, ES6, Bootstrap, JQuery, REACT.JS and ANGULAR 
+        also can build a back-end apis using spring framework with hibernate 
         that connected and interact with react.js
         also can create, manipulate and manage databases
         like mysql, mongodb, postgresql and firebase
@@ -27,5 +27,20 @@ $(function(){
         }):$('nav').css({
             background: 'transparent'
         })
+        $(this).scrollTop() > 1160 ? animateProgress() :
+        null
     })
+
+    const animateProgress = () => {
+        $(".skills .container span").each(function(index){
+            const width = $(this).text();
+            $(this).parent().next().children().eq(0).animate({
+                width
+            }, {
+                duration: 1000,
+                specialEasing: {
+                  width: "linear"
+                }})
+        });
+    }
 })
